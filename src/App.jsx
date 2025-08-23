@@ -12,6 +12,7 @@ import KeyFeatures from './components/Homepage/KeyFeatures'
 import HowItWorks from './components/Homepage/HowItWorks'
 import WhyChooseUs from './components/Homepage/WhyChooseUs'
 import CallToAction from './components/Homepage/CallToAction'
+import Contact from './components/contack'
 
 function App() {
   const router = createBrowserRouter([
@@ -20,8 +21,8 @@ function App() {
       element:<><Navbar/><Main /><Hero/><KeyFeatures/><HowItWorks/><WhyChooseUs/><CallToAction/><Footer/></>
     },
    {
-    path:"/user/dashboard/:username",
-    element:<><Navbar /><Dashboard/></>
+    path:"/contact",
+    element:<><Navbar /><Contact/><Footer/></>
    },
    {
     path:"/alerts",
