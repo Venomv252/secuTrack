@@ -12,7 +12,7 @@ import KeyFeatures from './components/Homepage/KeyFeatures'
 import HowItWorks from './components/Homepage/HowItWorks'
 import WhyChooseUs from './components/Homepage/WhyChooseUs'
 import CallToAction from './components/Homepage/CallToAction'
-import Contact from './components/contack'
+import Contact from './components/Contack.jsx'
 
 function App() {
   const router = createBrowserRouter([
