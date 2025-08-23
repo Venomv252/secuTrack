@@ -217,9 +217,47 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .steps-container {
+    gap: 25px;
+  }
+  
+  #hero,
+  #key-features,
+  #how-it-works,
+  #why-choose-us,
+  #call-to-action {
+    padding: 60px 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  #hero {
+    padding: 50px 20px;
+  }
+  
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
   }
   
   .features-grid {
@@ -227,13 +265,61 @@
     gap: 20px;
   }
   
+  .feature-card {
+    padding: 25px 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.95rem;
+  }
+  
   .steps-container {
     flex-direction: column;
     align-items: center;
+    gap: 30px;
   }
   
   .step {
-    margin-bottom: 40px;
+    max-width: 300px;
+  }
+  
+  .step h3 {
+    font-size: 1.3rem;
+  }
+  
+  .step p {
+    font-size: 0.95rem;
+  }
+  
+  .benefit-item {
+    padding: 18px 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .checkmark {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item p {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+  
+  #key-features,
+  #how-it-works,
+  #why-choose-us,
+  #call-to-action {
+    padding: 50px 20px;
   }
   
   #key-features h2,
@@ -241,5 +327,90 @@
   #why-choose-us h2,
   .cta-content h2 {
     font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  #hero {
+    padding: 40px 15px;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .cta-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .feature-card {
+    padding: 20px 15px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+  
+  .step {
+    max-width: 250px;
+  }
+  
+  .step h3 {
+    font-size: 1.2rem;
+  }
+  
+  .step p {
+    font-size: 0.9rem;
+  }
+  
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+  }
+  
+  .benefit-item {
+    padding: 15px 12px;
+  }
+  
+  .benefit-item p {
+    font-size: 0.95rem;
+  }
+  
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+  
+  #key-features,
+  #how-it-works,
+  #why-choose-us,
+  #call-to-action {
+    padding: 40px 15px;
+  }
+  
+  #key-features h2,
+  #how-it-works h2,
+  #why-choose-us h2,
+  .cta-content h2 {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
   }
 }
