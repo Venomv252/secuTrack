@@ -13,6 +13,7 @@ import HowItWorks from './components/Homepage/HowItWorks'
 import WhyChooseUs from './components/Homepage/WhyChooseUs'
 import CallToAction from './components/Homepage/CallToAction'
 import Contact from './components/Contack.jsx'
+import Login from './components/login.jsx'
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +37,10 @@ function App() {
     path:"/SecurityScore",
     element:<><Navbar /><SecurityScore/></>
    },
+   {
+    path:"/login",
+    element:<><Navbar /><Login/><Footer/></>
+   }
   ])
   
   return (
